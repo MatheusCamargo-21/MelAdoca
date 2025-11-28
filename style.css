@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo img {
+    display: flex;
+    align-items: start;
+    height: 100px;
+    width: 120px;
+    
+
+}
+
+.list-container {
+   display: flex;
+   justify-content: end;
+   gap: 50px;
+   list-style: none;
+   cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.li-hover:hover{
+    color:orange;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    min-width: 32px;
+    min-height: 32px;
+    background-color: white;
+    color:black;
+}
+
+.input-lupa {
+    display: flex;
+    background-color: orange;
+    padding: 8px 16px 8px 8px;
+    border-radius: 24px;
+    gap: 8px;
+}
+
+.input-field {
+    width: 150px;
+    border: none;
+    background-color: transparent;
+}
+
+.input-field:focus {
+    outline: none;
+} 
+
+.background-color {
+    background-image: linear-gradient(to bottom, #ff9000, #fa9f00, #f3ae00, #ebbc00, #e2ca00, #e2ca00, #e2ca00, #e2ca00, #ebbc00, #f3ae00, #fa9f00, #ff9000);
+    min-height: 100vh;
+}
+
+.text-apresentation {
+    justify-content:center;
+    align-items: center;
+    margin: 10px 40px;
+    padding: 250px 10px 20px 30px;
+}
+
+.h1-text {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 70px;
+  font-weight: 365;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.p1-text {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-weight: 200;
+  font-style: italic;
+  margin-top: 1px;
+  margin-bottom: 20px;
+}
+
+
+.p2-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 30px;
+  font-style: normal;
+}
+
+.mel-escorrendo {
+    float: right;   
+    margin-left: 20px; 
+    max-width: 450px; 
+}
+
+.btn {
+    padding: 15px 32px;
+    text-align: center;
+    margin: 80px 2px;
+    border-radius: 16px;
+    background-color: #059c44; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 30px;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #037231;;
+}
+
+@media screen and (max-width: 768px){
+    body {
+    width: 100%;
+    flex-direction: column;
+    }
+}
