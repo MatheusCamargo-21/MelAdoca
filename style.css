@@ -16,6 +16,7 @@ nav {
   align-items: start;
   height: 100px;
   width: 120px;
+  margin-left: 2px;
 }
 
 .hamburger {
@@ -59,6 +60,21 @@ nav {
   .hamburger {
     display: block;
   }
+}
+
+.list-container-desktop {
+  display: flex;
+  justify-content: end;
+  column-gap: 20px;
+  padding-top: 7px;
+  list-style: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 .list-container {
