@@ -18,10 +18,54 @@ nav {
   width: 120px;
 }
 
+.hamburger {
+  order: -1;
+  margin-right: 238px;
+  margin-left: -174px;
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: black;
+  margin-top: 5px;
+}
+
+@media (max-width: 896px) {
+  .list-container {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    gap: 60px;
+  }
+
+  .list-container.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 .list-container {
-  display: flex;
+  display: none;
   justify-content: end;
   column-gap: 20px;
+  padding-top: 7px;
   list-style: none;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
@@ -39,19 +83,19 @@ nav {
   background-color: #1d1d1d;
   margin-top: 5px;
   transform: scaleX(0);
-   transform-origin: right;
+  transform-origin: right;
   transition: transform 0.4s ease-out;
 }
 
 .li-hover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .li-hover:hover .line {
-    transform: scaleX(1)!important;
-    color: orange;
+  transform: scaleX(1) !important;
+  color: orange;
   transition: transform 0.4s ease-out;
 }
 
@@ -164,7 +208,9 @@ nav {
   font-style: normal;
   color: white;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .btn:hover {
@@ -172,15 +218,15 @@ nav {
 }
 
 .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0px 40px 0px;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 40px 0px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 896px) {
   body {
     width: 100%;
     flex-direction: column;
@@ -201,4 +247,3 @@ nav {
     padding: 20px 10px;
   }
 }
-
